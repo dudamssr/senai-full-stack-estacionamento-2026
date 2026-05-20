@@ -42,6 +42,56 @@ O ESTACIONAMENTO ACME tem atuado em nossa cidade com ótimo atendimento e segura
 - [CT005] Altere pelo menos duas estadias preenchendo a **saida** e verificando se calcula o **valorTotal**.
 
 ## Tecnologias
+### Front-End
+- HTML
+- CSS  
+- JavaScript  
+
+### Back-End
+- Node.js  
+- Express  
+- Prisma  
+- CORS  
+- Dotenv  
+
+### Banco de Dados
+- MySQL  
 
 ## Passo a Passo de como executar e testar
+1. Clone o repositório:
+```bash
+https://github.com/dudamssr/fork.git
+```
 
+2. Acesse a pasta:
+```bash
+cd api
+```
+
+3. Instale as dependências:
+```bash
+npm install
+```
+
+4. Configure o arquivo `.env`:
+```env
+PORT=3000
+DATABASE_URL="mysql://root@localhost:3306/estacionamento_acme"
+```
+
+5. Execute as migrations:
+```bash
+npx prisma migrate dev
+```
+
+6. Gere o Prisma Client:
+```bash
+npx prisma generate
+```
+
+7. Inicie o servidor:
+```bash
+npm run dev
+```
+
+---
